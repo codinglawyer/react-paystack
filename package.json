@@ -19,7 +19,7 @@
     "paystack",
     "Gateway"
   ],
-  "author": "Ayeni Olusegun <nsegun5@gmail.com>, David Kopal",
+  "author": "Ayeni Olusegun <nsegun5@gmail.com>, David Kopal <kopaldvd@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/codinglawyer/react-paystack/issues"
