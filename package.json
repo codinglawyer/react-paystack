@@ -1,5 +1,5 @@
 {
-  "name": "@codinglawyer/react-paystack",
+  "name": "react-paystack-embed",
   "version": "1.0.1",
   "description": "This is an reactJS library for implementing paystack payment gateway",
   "main": "src/PayStack.js",
