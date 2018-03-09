@@ -1,14 +1,14 @@
 {
-  "name": "react-paystack",
+  "name": "@codinglawyer/react-paystack",
   "version": "1.0.1",
   "description": "This is an reactJS library for implementing paystack payment gateway",
-  "main": "distribution/paystack.min.js",
+  "main": "src/PayStack.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iamraphson/react-paystack.git"
+    "url": "git+https://github.com/codinglawyer/react-paystack"
   },
   "keywords": [
     "Javascript",
@@ -19,15 +19,19 @@
     "paystack",
     "Gateway"
   ],
-  "author": "Ayeni Olusegun <nsegun5@gmail.com>",
+  "author": "Ayeni Olusegun <nsegun5@gmail.com>, David Kopal",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iamraphson/react-paystack/issues"
+    "url": "https://github.com/codinglawyer/react-paystack/issues"
   },
-  "homepage": "https://github.com/iamraphson/react-paystack#readme",
-  "dependencies": {
+  "homepage": "https://github.com/codinglawyer/react-paystack#readme",
+  "devDependencies": {
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
+  },
+  "peerDependencies": {
+    "react": ">=15",
+    "react-dom": ">=15"
   }
 }
