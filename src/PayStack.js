@@ -14,7 +14,8 @@ class PayStack extends Component {
       quantity: this.props.quantity || "",
       subaccount: this.props.subaccount || "",
       transaction_charge: this.props.transaction_charge || 0,
-      bearer: this.props.bearer || ""
+      bearer: this.props.bearer || "",
+      channels: this.props.channels || []
     }
   }
 
@@ -40,7 +41,8 @@ class PayStack extends Component {
       quantity: this.state.quantity,
       subaccount: this.state.subaccount,
       transaction_charge: this.state.transaction_charge,
-      bearer: this.state.bearer
+      bearer: this.state.bearer,
+      channels: this.state.channels,
     }
     if (this.props.embed) {
       paystackOptions.container = "paystackEmbedContainer"
@@ -79,7 +81,8 @@ PayStack.propTypes = {
   amount: PropTypes.number.isRequired, //in kobo
   paystackkey: PropTypes.string.isRequired,
   callback: PropTypes.func.isRequired,
-  close: PropTypes.func.isRequired
+  close: PropTypes.func.isRequired,
+  channels: PropTypes.array,
 }
 
 export default PayStack;

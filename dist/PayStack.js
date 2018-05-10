@@ -48,7 +48,8 @@ var PayStack = function (_Component) {
         quantity: _this.state.quantity,
         subaccount: _this.state.subaccount,
         transaction_charge: _this.state.transaction_charge,
-        bearer: _this.state.bearer
+        bearer: _this.state.bearer,
+        channels: _this.state.channels
       };
       if (_this.props.embed) {
         paystackOptions.container = "paystackEmbedContainer";
@@ -68,7 +69,8 @@ var PayStack = function (_Component) {
       quantity: _this.props.quantity || "",
       subaccount: _this.props.subaccount || "",
       transaction_charge: _this.props.transaction_charge || 0,
-      bearer: _this.props.bearer || ""
+      bearer: _this.props.bearer || "",
+      channels: _this.props.channels || []
     };
     return _this;
   }
@@ -112,7 +114,8 @@ PayStack.propTypes = {
   amount: _propTypes2.default.number.isRequired, //in kobo
   paystackkey: _propTypes2.default.string.isRequired,
   callback: _propTypes2.default.func.isRequired,
-  close: _propTypes2.default.func.isRequired
+  close: _propTypes2.default.func.isRequired,
+  channels: _propTypes2.default.array
 };
 
 exports.default = PayStack;
